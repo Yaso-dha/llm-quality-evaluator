@@ -1,0 +1,155 @@
+
+[
+  {
+    "id": "QA001",
+    "question": "What is the refund period?",
+    "context": "Eligible products can be refunded within 30 days of purchase.",
+    "actual_output": "ELIGIBLE PRODUCTS CAN BE REFUNDED WITHIN 30 DAYS OF PURCHASE.",
+    "required_facts": [
+      "30 days",
+      "eligible products"
+    ],
+    "forbidden_claims": [
+      "60 days",
+      "all products are eligible"
+    ],
+    "expected_pass": true
+  },
+  {
+    "id": "QA002",
+    "question": "What is the refund period?",
+    "context": "Eligible products can be refunded within 30 days of purchase.",
+    "actual_output": "All products can be refunded within 90 days of purchase.",
+    "required_facts": [
+      "30 days",
+      "eligible products"
+    ],
+    "forbidden_claims": [
+      "60 days",
+      "all products are eligible"
+    ],
+    "expected_pass": false
+  },
+  {
+    "id": "QA003",
+    "question": "How can I contact support?",
+    "context": "Customers can contact support by email at help@example.com.",
+    "actual_output": "I do not have enough information to provide a phone number. You can contact support by email at help@example.com.",
+    "required_facts": [
+      "help@example.com"
+    ],
+    "forbidden_claims": [
+      "555-0100"
+    ],
+    "expected_pass": true
+  }
+  ,
+{
+  "id": "QA004",
+  "question": "How long does standard delivery take?",
+  "context": "Standard delivery takes 5 business days.",
+  "actual_output": "Standard delivery takes 5 business days.",
+  "required_facts": ["5 business days"],
+  "forbidden_claims": ["15 business days", "same-day delivery"],
+  "expected_pass": true
+},
+{
+  "id": "QA005",
+  "question": "How long does standard delivery take?",
+  "context": "Standard delivery takes 5 business days.",
+  "actual_output": "Standard delivery takes 15 business days.",
+  "required_facts": ["5 business days"],
+  "forbidden_claims": ["15 business days"],
+  "expected_pass": false
+},
+{
+  "id": "QA006",
+  "question": "What payment methods are accepted?",
+  "context": "Customers can pay using Visa or Mastercard.",
+  "actual_output": "Customers can pay using Visa.",
+  "required_facts": ["Visa", "Mastercard"],
+  "forbidden_claims": ["American Express is accepted"],
+  "expected_pass": false
+},
+{
+  "id": "QA007",
+  "question": "What payment methods are accepted?",
+  "context": "Customers can pay using Visa or Mastercard.",
+  "actual_output": "Customers can pay using Visa, Mastercard, or American Express.",
+  "required_facts": ["Visa", "Mastercard"],
+  "forbidden_claims": ["American Express"],
+  "expected_pass": false
+},
+{
+  "id": "QA008",
+  "question": "When will my order arrive?",
+  "context": "Standard delivery takes 5 business days.",
+  "actual_output": "Your order should arrive within 10 business days.",
+  "required_facts": ["5 business days"],
+  "forbidden_claims": ["10 business days"],
+  "expected_pass": false
+},
+{
+  "id": "QA009",
+  "question": "Can I get a refund after opening a product?",
+  "context": "Refunds are available within 30 days for eligible products. The policy does not specify whether opened products qualify.",
+  "actual_output": "I can't confirm whether opened products qualify for a refund from the available policy. Refunds are available within 30 days for eligible products.",
+  "required_facts": ["30 days", "eligible products"],
+  "forbidden_claims": ["opened products are always eligible"],
+  "expected_pass": true
+},
+{
+  "id": "QA010",
+  "question": "How long do I have to request a refund?",
+  "context": "Eligible products can be refunded within 30 days of purchase.",
+  "actual_output": "You can request a refund within one month of purchasing an eligible product.",
+  "required_facts": ["eligible product"],
+  "forbidden_claims": ["90 days", "all products are eligible"],
+  "expected_pass": true
+},
+{
+  "id": "QA011",
+  "question": "How can I contact customer support?",
+  "context": "Customers can contact support by email at help@example.com.",
+  "actual_output": "Please email help@example.com to contact customer support.",
+  "required_facts": ["help@example.com"],
+  "forbidden_claims": ["555-0100"],
+  "expected_pass": true
+},
+{
+  "id": "QA012",
+  "question": "What is the warranty period?",
+  "context": "The product has a 2-year warranty covering manufacturing defects.",
+  "actual_output": "The product has a 2-year warranty covering manufacturing defects and accidental damage.",
+  "required_facts": ["2-year warranty", "manufacturing defects"],
+  "forbidden_claims": ["accidental damage"],
+  "expected_pass": false
+},
+{
+  "id": "QA013",
+  "question": "Can I get a refund after 30 days?",
+  "context": "Eligible products can be refunded within 30 days of purchase. Refunds after 30 days are not covered by this policy.",
+  "actual_output": "Eligible products can be refunded within 30 days of purchase. Refunds are also available after 30 days.",
+  "required_facts": ["30 days", "eligible products"],
+  "forbidden_claims": ["refunds are also available after 30 days"],
+  "expected_pass": false
+},
+{
+  "id": "QA014",
+  "question": "What is the support phone number?",
+  "context": "The available support information provides the email address help@example.com but does not provide a phone number.",
+  "actual_output": "I couldn't find a support phone number in the available information. You can contact support at help@example.com.",
+  "required_facts": ["help@example.com"],
+  "forbidden_claims": ["555-0100"],
+  "expected_pass": true
+},
+{
+  "id": "QA015",
+  "question": "What does the product warranty cover?",
+  "context": "The product has a 2-year warranty covering manufacturing defects. Accidental damage is excluded.",
+  "actual_output": "The product has a 2-year warranty, but the available information does not specify what it covers.",
+  "required_facts": ["2-year warranty", "manufacturing defects"],
+  "forbidden_claims": ["accidental damage is covered"],
+  "expected_pass": false
+}
+]

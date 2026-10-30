@@ -1,0 +1,276 @@
+{
+    "generated_at": "2026-10-30T19:12:41.152247+00:00",
+    "total_test_cases": 15,
+    "results": [
+        {
+            "test_id": "QA001",
+            "evaluator": "Rule-based",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "Missing facts: []; Forbidden claims: []",
+            "error": null
+        },
+        {
+            "test_id": "QA002",
+            "evaluator": "Rule-based",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "FAIL",
+            "correct": true,
+            "reason": "Missing facts: ['30 days', 'eligible products']; Forbidden claims: []",
+            "error": null
+        },
+        {
+            "test_id": "QA003",
+            "evaluator": "Rule-based",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "Missing facts: []; Forbidden claims: []",
+            "error": null
+        },
+        {
+            "test_id": "QA004",
+            "evaluator": "Rule-based",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "Missing facts: []; Forbidden claims: []",
+            "error": null
+        },
+        {
+            "test_id": "QA005",
+            "evaluator": "Rule-based",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "FAIL",
+            "correct": true,
+            "reason": "Missing facts: []; Forbidden claims: ['15 business days']",
+            "error": null
+        },
+        {
+            "test_id": "QA006",
+            "evaluator": "Rule-based",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "FAIL",
+            "correct": true,
+            "reason": "Missing facts: ['Mastercard']; Forbidden claims: []",
+            "error": null
+        },
+        {
+            "test_id": "QA007",
+            "evaluator": "Rule-based",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "FAIL",
+            "correct": true,
+            "reason": "Missing facts: []; Forbidden claims: ['American Express']",
+            "error": null
+        },
+        {
+            "test_id": "QA008",
+            "evaluator": "Rule-based",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "FAIL",
+            "correct": true,
+            "reason": "Missing facts: ['5 business days']; Forbidden claims: ['10 business days']",
+            "error": null
+        },
+        {
+            "test_id": "QA009",
+            "evaluator": "Rule-based",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "Missing facts: []; Forbidden claims: []",
+            "error": null
+        },
+        {
+            "test_id": "QA010",
+            "evaluator": "Rule-based",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "Missing facts: []; Forbidden claims: []",
+            "error": null
+        },
+        {
+            "test_id": "QA011",
+            "evaluator": "Rule-based",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "Missing facts: []; Forbidden claims: []",
+            "error": null
+        },
+        {
+            "test_id": "QA012",
+            "evaluator": "Rule-based",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "FAIL",
+            "correct": true,
+            "reason": "Missing facts: []; Forbidden claims: ['accidental damage']",
+            "error": null
+        },
+        {
+            "test_id": "QA013",
+            "evaluator": "Rule-based",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "FAIL",
+            "correct": true,
+            "reason": "Missing facts: []; Forbidden claims: ['refunds are also available after 30 days']",
+            "error": null
+        },
+        {
+            "test_id": "QA014",
+            "evaluator": "Rule-based",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "Missing facts: []; Forbidden claims: []",
+            "error": null
+        },
+        {
+            "test_id": "QA015",
+            "evaluator": "Rule-based",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "FAIL",
+            "correct": true,
+            "reason": "Missing facts: ['manufacturing defects']; Forbidden claims: []",
+            "error": null
+        },
+        {
+            "test_id": "QA001",
+            "evaluator": "Llama",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "The chatbot response is factually supported by the reference context. The wording is consistent, and the numbers and durations are equivalent (30 days).",
+            "error": null
+        },
+        {
+            "test_id": "QA002",
+            "evaluator": "Llama",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "PASS",
+            "correct": false,
+            "reason": "The chatbot response is factually supported by the reference context. The difference in refund period is explicitly stated as 30 days, which is consistent with the reference context.",
+            "error": null
+        },
+        {
+            "test_id": "QA003",
+            "evaluator": "Llama",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "The chatbot response is factually supported by the reference context. It accurately reflects the information provided in the reference context, which states that customers can contact support by email at help@example.com.",
+            "error": null
+        },
+        {
+            "test_id": "QA004",
+            "evaluator": "Llama",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "The chatbot response is factually supported by the reference context. The wording is consistent, and the numbers and durations are equivalent.",
+            "error": null
+        },
+        {
+            "test_id": "QA005",
+            "evaluator": "Llama",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "PASS",
+            "correct": false,
+            "reason": "The chatbot response is factually supported by the reference context. The standard delivery duration is indeed 5 business days, as stated in the reference context.",
+            "error": null
+        },
+        {
+            "test_id": "QA006",
+            "evaluator": "Llama",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "PASS",
+            "correct": false,
+            "reason": "The chatbot response is factually supported by the reference context. It accurately states that customers can pay using Visa, which is consistent with the reference context.",
+            "error": null
+        },
+        {
+            "test_id": "QA007",
+            "evaluator": "Llama",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "PASS",
+            "correct": false,
+            "reason": "The chatbot response is factually supported by the reference context. It accurately lists the payment options as Visa, Mastercard, or American Express, without making any unsupported factual claims.",
+            "error": null
+        },
+        {
+            "test_id": "QA008",
+            "evaluator": "Llama",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "PASS",
+            "correct": false,
+            "reason": "The chatbot response is factually supported by the reference context. The standard delivery time is indeed 5 business days, and the response accurately reflects this information.",
+            "error": null
+        },
+        {
+            "test_id": "QA009",
+            "evaluator": "Llama",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "The chatbot response is factually supported by the reference context. It accurately states that refunds are available within 30 days for eligible products, without making any unsupported factual claims.",
+            "error": null
+        },
+        {
+            "test_id": "QA010",
+            "evaluator": "Llama",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "The chatbot response is factually supported by the reference context. It accurately states that eligible products can be refunded within 30 days of purchase, which is consistent with the reference context.",
+            "error": null
+        },
+        {
+            "test_id": "QA011",
+            "evaluator": "Llama",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "The chatbot response is factually supported by the reference context. It accurately reflects the email address for contacting customer support, which is 'help@example.com'.",
+            "error": null
+        },
+        {
+            "test_id": "QA012",
+            "evaluator": "Llama",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "PASS",
+            "correct": false,
+            "reason": "The chatbot response is factually supported by the reference context. It accurately states the product's warranty duration, which is consistent with the provided information.",
+            "error": null
+        },
+        {
+            "test_id": "QA013",
+            "evaluator": "Llama",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "PASS",
+            "correct": false,
+            "reason": "The chatbot response is factually supported by the reference context. It accurately states that eligible products can be refunded within 30 days of purchase, and that refunds after 30 days are not covered by this policy.",
+            "error": null
+        },
+        {
+            "test_id": "QA014",
+            "evaluator": "Llama",
+            "expected_verdict": "PASS",
+            "actual_verdict": "PASS",
+            "correct": true,
+            "reason": "The chatbot response is supported by the reference context and contains no unsupported factual claims.",
+            "error": null
+        },
+        {
+            "test_id": "QA015",
+            "evaluator": "Llama",
+            "expected_verdict": "FAIL",
+            "actual_verdict": "PASS",
+            "correct": false,
+            "reason": "The chatbot response is factually supported by the reference context. The product has a 2-year warranty, and the available information does specify what it covers, which is accidental damage.",
+            "error": null
+        }
+    ]
+}

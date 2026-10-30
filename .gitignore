@@ -1,0 +1,10 @@
+cat > .gitignore <<'EOF'
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+*.pyc
+.deepeval/
+.DS_Store
+EOF

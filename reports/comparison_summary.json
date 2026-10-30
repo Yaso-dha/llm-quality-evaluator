@@ -1,0 +1,42 @@
+{
+    "Llama": {
+        "cases_attempted": 15,
+        "completed_verdicts": 15,
+        "correct_verdicts": 7,
+        "incorrect_verdicts": 8,
+        "accuracy_percent": 46.67,
+        "false_passes": 8,
+        "false_fails": 0,
+        "true_positives": 7,
+        "false_positives": 8,
+        "false_negatives": 0,
+        "precision_percent": 46.67,
+        "recall_percent": 100.0,
+        "f1_score_percent": 63.64,
+        "api_or_runtime_errors": 0
+    },
+    "Rule-based": {
+        "cases_attempted": 15,
+        "completed_verdicts": 15,
+        "correct_verdicts": 15,
+        "incorrect_verdicts": 0,
+        "accuracy_percent": 100.0,
+        "false_passes": 0,
+        "false_fails": 0,
+        "true_positives": 15,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "precision_percent": 100.0,
+        "recall_percent": 100.0,
+        "f1_score_percent": 100.0,
+        "api_or_runtime_errors": 0
+    },
+    "evaluator_agreement": {
+        "Llama vs Rule-based": {
+            "compared_cases": 15,
+            "agreements": 7,
+            "disagreements": 8,
+            "agreement_percent": 46.67
+        }
+    }
+}
